@@ -1,0 +1,26 @@
+{
+  "name": "vue-nodegui-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "webpack -p",
+    "dev": "webpack -p && qode --inspect ./dist/main.js",
+    "start": "qode --inspect ./dist/main.js"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.12.1",
+    "@vue/compiler-sfc": "^3.0.0-alpha.1",
+    "vue": "^3.0.0-alpha.1",
+    "vue-loader": "^16.0.0-alpha.1",
+    "vue-nodegui": "novustheory/vue-nodegui#master"
+  },
+  "devDependencies": {
+    "node-loader": "^0.6.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "css-loader": "^3.4.1",
+    "file-loader": "^5.0.2",
+    "mini-css-extract-plugin": "^0.9.0"
+  }
+}
