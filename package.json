@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/main.js",
+  "private": true,
   "scripts": {
     "build": "webpack -p",
     "dev": "webpack -p && qode --inspect ./dist/main.js",
