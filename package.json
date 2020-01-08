@@ -14,7 +14,7 @@
     "@vue/compiler-sfc": "^3.0.0-alpha.1",
     "vue": "^3.0.0-alpha.1",
     "vue-loader": "^16.0.0-alpha.1",
-    "vue-nodegui": "novustheory/vue-nodegui#master"
+    "vue-nodegui": "^1.0.0-alpha.0"
   },
   "devDependencies": {
     "node-loader": "^0.6.0",
