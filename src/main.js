@@ -11,4 +11,4 @@ settings.title = "vue-nodegui example",
 settings.windowIcon = new QIcon(path.join(process.cwd(), 'src/assets/logo.png'))
 
 const window = new Window(settings);
-createApp().mount(App, window);
+createApp(App).mount(window);

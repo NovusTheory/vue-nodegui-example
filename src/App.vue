@@ -1,19 +1,28 @@
 <template>
-  <view :style="viewStyle">
+  <div :style="viewStyle">
     <img src="./assets/logo.png"/>
     <p id="hello-text">Hello from vue-nodegui</p>
-  </view>
+    <p>Clicked Increment {{ count }} times</p>
+    <button @click="inc">Increment</button>
+  </div>
 </template>
 
 <script>
+import { ref } from 'vue-nodegui'
+
 export default {
   setup() {
+    let count = ref(0)
+    const inc = () => {
+      count.value++
+    }
+
     const viewStyle = {
       ["font-size"]: "24px",
       ["qproperty-alignment"]: "AlignHCenter"
     }
 
-    return { viewStyle }
+    return { viewStyle, count, inc }
   }
 }
 </script>
